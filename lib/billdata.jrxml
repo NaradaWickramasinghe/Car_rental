@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="billdata" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cc0db33b-4653-463a-b85d-c0b023c7b449">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM bill]]>
+	</queryString>
+	<field name="rentid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="rentid"/>
+		<property name="com.jaspersoft.studio.field.label" value="rentid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="rentdate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="rentdate"/>
+		<property name="com.jaspersoft.studio.field.label" value="rentdate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="overduedate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="overduedate"/>
+		<property name="com.jaspersoft.studio.field.label" value="overduedate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="regno" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="regno"/>
+		<property name="com.jaspersoft.studio.field.label" value="regno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="model" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="model"/>
+		<property name="com.jaspersoft.studio.field.label" value="model"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="returndate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="returndate"/>
+		<property name="com.jaspersoft.studio.field.label" value="returndate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="latedates" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="latedates"/>
+		<property name="com.jaspersoft.studio.field.label" value="latedates"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="latefee" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="latefee"/>
+		<property name="com.jaspersoft.studio.field.label" value="latefee"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<field name="finalamount" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="finalamount"/>
+		<property name="com.jaspersoft.studio.field.label" value="finalamount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+	</field>
+	<group name="rentid">
+		<groupExpression><![CDATA[$F{rentid}]]></groupExpression>
+	</group>
+	<group name="rentdate">
+		<groupExpression><![CDATA[$F{rentdate}]]></groupExpression>
+	</group>
+	<group name="overduedate">
+		<groupExpression><![CDATA[$F{overduedate}]]></groupExpression>
+	</group>
+	<group name="regno">
+		<groupExpression><![CDATA[$F{regno}]]></groupExpression>
+	</group>
+	<group name="model">
+		<groupExpression><![CDATA[$F{model}]]></groupExpression>
+	</group>
+	<group name="returndate">
+		<groupExpression><![CDATA[$F{returndate}]]></groupExpression>
+	</group>
+	<group name="latedates">
+		<groupExpression><![CDATA[$F{latedates}]]></groupExpression>
+	</group>
+	<group name="latefee">
+		<groupExpression><![CDATA[$F{latefee}]]></groupExpression>
+	</group>
+	<group name="finalamount">
+		<groupExpression><![CDATA[$F{finalamount}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="12" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="0" width="200" height="25" uuid="ce84d0a8-0f30-41c5-99da-0e945950f55d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NP Vehicle renting (PVT).LTD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="24" width="160" height="20" uuid="fac136ad-33c9-442a-9d61-5afabe579dc2"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[193/D , Kandy Road ,Kelaniya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="44" width="140" height="20" uuid="4f9184ec-8edc-4a36-b17c-a46dd375f158"/>
+				<text><![CDATA[Tel - 0765232101/0770478061]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="450" y="50" width="120" height="20" forecolor="#0A0909" uuid="df52da60-eb58-4da1-b2ab-c788e88d2c8f"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="52" width="70" height="16" uuid="a02ee0c1-bebc-4c26-96fc-d4c477316021"/>
+				<text><![CDATA[Last Updated]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-11" y="72" width="586" height="1" uuid="34c92808-ac4b-4963-8667-de4b1bea3d94"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="73" splitType="Stretch">
+			<line>
+				<reportElement x="-22" y="50" width="599" height="1" uuid="760be381-86e2-4996-8dbf-d2159d7ba237"/>
+			</line>
+			<staticText>
+				<reportElement x="-23" y="16" width="63" height="30" uuid="ad3e6c3f-4179-48c9-945a-aac0b43048a4"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Rent ID ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="16" width="63" height="30" uuid="3af79899-64d5-403a-a146-96c6954f808d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Rent Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="16" width="63" height="30" uuid="bdfd2d97-2dbf-4f15-ac43-29849e46ec37"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Overdue Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="16" width="63" height="30" uuid="f46b206f-ca04-400f-9c97-ccfa4f9b12ac"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Reg No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="16" width="63" height="30" uuid="4a24e748-d4e8-4aef-a71e-1d15fc5c883d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Model]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="16" width="63" height="30" uuid="f651f251-c8a4-46c1-89da-4567c5c3e703"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Return Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="16" width="83" height="30" uuid="a4d28ff2-223c-47e4-a81f-cea61aa88549"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Final Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="16" width="63" height="30" uuid="2c938d9d-208e-46d2-91c5-a7301b18be3f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Late Dates]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="16" width="63" height="30" uuid="a872dcd5-123a-4b2f-9516-195aa4736ad3"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Late Fee]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="64" splitType="Stretch">
+			<textField>
+				<reportElement x="103" y="0" width="63" height="30" uuid="58e1fcb9-2038-4dce-a85c-82abb1b9fb3c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{overduedate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="0" width="63" height="30" uuid="9ad80c6e-9b22-437d-9698-67c459baa4e0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rentdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="0" width="63" height="30" uuid="3a132660-7afe-4b70-abc1-e6009abe146e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{regno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="62" height="30" uuid="873512f1-5cd7-4147-9a0c-68bb4883f43e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{model}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="0" width="62" height="30" uuid="1a5e3495-6344-4a91-9901-5a27d6745034"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{returndate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="64" height="30" uuid="4b9b7d4f-42e4-41c9-9479-87a92943d9aa"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{latedates}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="0" width="62" height="30" uuid="96bae524-ba83-4e41-8b28-0e20ce8623c8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{latefee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="487" y="0" width="83" height="30" uuid="b892f727-2868-44f5-b15a-617e78160889"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{finalamount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-22" y="0" width="60" height="30" uuid="ec8a91a2-0c5e-43bc-9c87-c6399812522e"/>
+				<textFieldExpression><![CDATA[$F{rentid}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="11" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
